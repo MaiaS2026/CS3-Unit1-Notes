@@ -76,3 +76,42 @@ print(class_roster)
 # Check if item exists in a list
 print(13 in lottery_nums)
 print(26 in lottery_nums)
+
+# ** TUPLES **
+# ordered and immutable (can't change items)
+# useful for "snapshot" of a row of data
+student = ('Maia', 17, 'AP Stats', 4.0)
+print(student)
+# student[3] = 2.6
+
+# ** SETS **
+# unsorted, and stores other immutable types
+# NO DUPLICATES allowed! 
+songs = {'Stranger', '3005', '7', '3', 'Mutt', 'Freeze', '3005'}
+print(songs)
+# sets can be used to de-duplicate list items
+colors = ['blue', 'pink', 'purple', 'blue', 'pink']
+print(set(colors))
+songs.add('Gypsy')
+songs.add('Stranger') # duplicate value
+print(songs)
+
+# ** DICTIONARIES **
+# mutable, but the KEYS can only be immutable types
+# { key: value } pairs. Keys must be UNIQUE!
+# unordered (no order, can't sort in place)
+characters = { 'Aelin': 'assasin queen',
+               'Karate Kid': 'pupil',
+               'Phil Dunphy': 'dad',
+               'Wall-E': 'trash robot',
+               'Princess Peach': 'damsel in distress',
+               'Dexter': 'serial killer (justified?)',
+               'Lara Jean': 'letter writer'
+               }
+print(len(characters))
+# dictionary with numerical keys, list values
+grade_requirements = { 9: ['Bio', 'Math', 'English'],
+                      10: ['Chem', 'Math', 'English'],
+                      11: ['Physics', 'Math', 'English'],
+                      12: ['Math', 'English', 'PE']
+                      }
