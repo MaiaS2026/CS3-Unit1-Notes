@@ -159,3 +159,47 @@ def can_drive(age):
 can_drive(18)
 can_drive(16)
 can_drive(12)
+
+# ITERATION (repetition)
+# while loop: run until a condition is no longer true
+max = 16
+counter = 6
+while (counter <= max):
+    print(f'Count is {counter}')
+    counter += 1
+
+# for-in loop: iterates through a collection
+for student in class_roster:
+    print(student)
+
+# for-in range
+# prints 0 until 3
+for num in range(4):
+    print(num)
+# range(start, stop) -> not inclusive stop
+for num in range(1,5):
+    print(num)
+# range(start, stop, step)
+for num in range(10, 50, 5):
+    print(num)
+
+# python help function
+# help(range)
+
+# enumerate() lets tou loop through index AND items
+# useful for LIST collections
+for index, item in enumerate(class_roster):
+    print(f'Item: {item} is at index {index}')
+
+# use .items() on a dictionary to loop over keys AND values
+for character, description in characters.items():
+    # character represents the KEYS of this dict
+    # description represents the VALUES of this dict
+    print(f'{character} is a {description}')
+
+# review: setting up a dictionary
+hex_colors = {
+    'red': '#FF0000',
+    'green': '#008000',
+    'blue': '#0000FF'
+}
